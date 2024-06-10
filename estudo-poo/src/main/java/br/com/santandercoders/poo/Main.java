@@ -15,7 +15,9 @@ public class Main {
         cachorro1.tamanhoRabo = 20;
 
         cachorro1.latir();
-
+        System.out.println(cachorro1.interagir("carinho"));
+        System.out.println(cachorro1.interagir("dorme"));
+        System.out.println(cachorro1.interagir("nada"));
     }
 
 }
