@@ -1,28 +1,17 @@
 package br.com.santandercoders.poo.animais;
 
-public class Cachorro {
+public class Cachorro extends Animal {
     /* ATRIBUTOS */
-    private String nome, cor, estadoDeEspirito;
-    private double peso;
-    private int altura, tamanhoRabo;
+    private static int numeroDeCachorros;
+    private int tamanhoRabo;
 
     /* MÉTODOS */
     //Construtor sem parâmetros
-    public Cachorro(){
-        //Aqui dentro podemos colocar valores default para caso nada seja passado no construtor
-        this.nome = "Rex";
-        this.cor = "Marrom";
-        this.peso = 8.4;
-        this.altura = 67;
-        this.tamanhoRabo = 5;
-    }
     //Construtor com parâmetros
-    public Cachorro(String nome, String cor, int altura, int tamanhoRabo, double peso){
-        this.nome = nome;
-        this.cor = cor;
-        this.altura = altura;
+    public Cachorro(String nome, String cor, String estadoDeEspirito, int altura, int tamanhoRabo, double peso){
+        super(nome, cor, estadoDeEspirito, peso, altura);
         this.tamanhoRabo = tamanhoRabo;
-        this.peso = peso;
+        numeroDeCachorros++;
     }
     //Getters
     public String getNome(){
@@ -47,6 +36,10 @@ public class Cachorro {
 
     public int getTamanhoRabo() {
         return tamanhoRabo;
+    }
+
+    public static int getNumeroDeCachorros() {
+        return numeroDeCachorros;
     }
 
     //Setters
@@ -74,9 +67,27 @@ public class Cachorro {
         this.tamanhoRabo = tamanhoRabo;
     }
 
+    //Override Métodos
+
+
+    @Override
+    public String toString() {
+        return "Cachorro{" +
+                "nome='" + this.nome + '\'' +
+                ", cor='" + this.cor + '\'' +
+                ", estadoDeEspirito='" + this.estadoDeEspirito + '\'' +
+                ", peso=" + this.peso +
+                ", altura=" + this.altura +
+                ", tamanhoRabo=" + this.tamanhoRabo +
+                '}';
+    }
+
+    @Override
+    public void soar(){
+        System.out.println("AU AU");
+    }
+
     //Métodos restantes
-    public void comer(){}
-    public void latir(){System.out.println("AU AU");}
 
     public String pegar(){
         return "Bolinha";
