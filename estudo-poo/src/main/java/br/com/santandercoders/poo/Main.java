@@ -4,6 +4,7 @@ package br.com.santandercoders.poo;
 import br.com.santandercoders.poo.animais.Cachorro;
 import br.com.santandercoders.poo.animais.Gato;
 import br.com.santandercoders.poo.animais.Passarinho;
+import br.com.santandercoders.poo.lojas.PetShop;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -13,9 +14,16 @@ public class Main {
         Gato gato = new Gato("Gatão", "Preto", "Triste", 8.9, 50 );
         Passarinho passaro = new Passarinho("Loro", "Verde", "Neutro", 3.4, 20);
 
-        cachorro1.soar();
-        gato.soar();
-        passaro.soar();
+        PetShop petShop = new PetShop();
+
+        petShop.darBanho(cachorro1);
+        System.out.println(cachorro1.getEstadoDeEspirito());
+
+        petShop.darBanho(gato);
+        System.out.println(gato.getEstadoDeEspirito());
+
+        petShop.tosar(cachorro1);
+        System.out.println(cachorro1.getEstadoDeEspirito());
     }
 
 }

@@ -14,54 +14,12 @@ public class Cachorro extends Animal {
         numeroDeCachorros++;
     }
     //Getters
-    public String getNome(){
-        return this.nome;
-    }
-
-    public String getCor() {
-        return cor;
-    }
-
-    public String getEstadoDeEspirito() {
-        return estadoDeEspirito;
-    }
-
-    public double getPeso() {
-        return peso;
-    }
-
-    public int getAltura() {
-        return altura;
-    }
 
     public int getTamanhoRabo() {
         return tamanhoRabo;
     }
 
-    public static int getNumeroDeCachorros() {
-        return numeroDeCachorros;
-    }
-
     //Setters
-    public void setNome(String nome){
-        this.nome = nome;
-    }
-
-    public void setCor(String cor) {
-        this.cor = cor;
-    }
-
-    public void setEstadoDeEspirito(String estadoDeEspirito) {
-        this.estadoDeEspirito = estadoDeEspirito;
-    }
-
-    public void setPeso(double peso) {
-        this.peso = peso;
-    }
-
-    public void setAltura(int altura) {
-        this.altura = altura;
-    }
 
     public void setTamanhoRabo(int tamanhoRabo) {
         this.tamanhoRabo = tamanhoRabo;
