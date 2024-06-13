@@ -10,11 +10,11 @@ public class Pilha {
         this.height = 1;
     }
 
-    public Node getTop(){
+    public String getTop(){
         if (this.top == null){
-            return null;
+            return "Sem elementos na pilha";
         }
-        return this.top;
+        return this.top.getData();
     }
 
     public int getHeight(){
@@ -24,7 +24,7 @@ public class Pilha {
     public void print(){
         Node temp = this.top;
         while(temp != null){
-            System.out.println(temp.data);
+            System.out.println(temp.getData());
             temp = temp.next;
         }
     }

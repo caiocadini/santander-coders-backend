@@ -8,7 +8,7 @@ public class Node {
         this.data = data;
     }
 
-    public void printData(){
-        System.out.println(this.data);
+    public String getData(){
+        return this.data;
     }
 }
