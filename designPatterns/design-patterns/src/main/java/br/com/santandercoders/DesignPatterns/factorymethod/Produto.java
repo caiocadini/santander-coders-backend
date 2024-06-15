@@ -1,4 +1,4 @@
-package br.com.santandercoders.DesignPatters.factorymethod;
+package br.com.santandercoders.DesignPatterns.factorymethod;
 
 import java.math.BigDecimal;
 

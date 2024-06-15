@@ -1,4 +1,4 @@
-package br.com.santandercoders.DesignPatters.factorymethod;
+package br.com.santandercoders.DesignPatterns.factorymethod;
 
 public class TesteProduto {
     public static void main (String[] args){
