@@ -1,4 +1,4 @@
-package br.com.santandercoders.DesignPatterns.Pessoa;
+package br.com.santandercoders.DesignPatterns.builder;
 
 import java.time.LocalDate;
 
