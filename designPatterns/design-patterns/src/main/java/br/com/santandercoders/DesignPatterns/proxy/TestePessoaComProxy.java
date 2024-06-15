@@ -6,7 +6,10 @@ import java.time.LocalDate;
 
 public class TestePessoaComProxy {
     public static void main(String[] args){
-        PessoaService pessoaService = new PessoaService(new PessoaRepositoryProxy());
+        PessoaRepositoryProxy pessoaRepositoryProxy = new PessoaRepositoryProxy();
+        NovoPessoaRepositoryProxy novoPessoaRepositoryProxy = new NovoPessoaRepositoryProxy();
+        PessoaService pessoaService = new PessoaService(pessoaRepositoryProxy);
+
 
         Pessoa pessoa = new Pessoa.PessoaBuilder().sobrenome("Cadini1").dataNascimento(LocalDate.of(2003, 12, 12))
                 .nome("Caio1").apelido("caio").email("caio@g.com").documento("pdf").build();
